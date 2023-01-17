@@ -18,7 +18,12 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: var(--color-light-gray);
+    min-height: 667px;
 }
 
 .container {
@@ -67,6 +72,10 @@ body {
 }
 
 @media (min-width: 600px) {
+    body {
+        min-height: 800px;
+    }
+
     .container {
         margin-top: 150px;
     }
